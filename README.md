@@ -65,7 +65,3 @@ Result: `All 10 tests passed.` The demonstration shows a successful order,
 a declined payment, a shipping error with a refund, a purchase after rollback,
 and a rejected order when stock is empty.
 
-## Before submitting
-
-Before submitting, understand the code and adapt the example yourself. The assignment
-allows AI for examples and explanations, while the submitted work must be your own.
