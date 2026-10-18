@@ -1,0 +1,80 @@
+{
+  "version": "2.0.0",
+  "options": {
+    "cwd": "${workspaceFolder}"
+  },
+  "tasks": [
+    {
+      "label": "Compile Java",
+      "type": "shell",
+      "command": "javac",
+      "args": [
+        "--release",
+        "17",
+        "-encoding",
+        "UTF-8",
+        "-d",
+        "out",
+        "src/*.java"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "windows": {
+        "command": "C:\\Program Files\\Java\\jdk-21.0.10\\bin\\javac.exe"
+      }
+    },
+    {
+      "label": "Run demo",
+      "type": "shell",
+      "command": "java",
+      "args": [
+        "-cp",
+        "out",
+        "Main"
+      ],
+      "dependsOn": "Compile Java",
+      "problemMatcher": [],
+      "windows": {
+        "command": "C:\\Program Files\\Java\\jdk-21.0.10\\bin\\java.exe"
+      }
+    },
+    {
+      "label": "Compile tests",
+      "type": "shell",
+      "command": "javac",
+      "args": [
+        "--release",
+        "17",
+        "-encoding",
+        "UTF-8",
+        "-d",
+        "out",
+        "src/*.java",
+        "test/*.java"
+      ],
+      "problemMatcher": [],
+      "windows": {
+        "command": "C:\\Program Files\\Java\\jdk-21.0.10\\bin\\javac.exe"
+      }
+    },
+    {
+      "label": "Run tests",
+      "type": "shell",
+      "command": "java",
+      "args": [
+        "-cp",
+        "out",
+        "OrderFacadeTest"
+      ],
+      "dependsOn": "Compile tests",
+      "group": "test",
+      "problemMatcher": [],
+      "windows": {
+        "command": "C:\\Program Files\\Java\\jdk-21.0.10\\bin\\java.exe"
+      }
+    }
+  ]
+}
