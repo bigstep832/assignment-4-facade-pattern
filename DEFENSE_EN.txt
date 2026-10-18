@@ -65,7 +65,7 @@ known input checks early, but it would still need to handle external shipping fa
 Which five Clean Code principles are used?
 Meaningful names; single responsibility; hiding details behind a simple interface;
 short methods with early validation; proper error handling.
-The report includes a code excerpt for each principle.
+The report explains each principle using annotated references to code screenshots.
 
 Why are there no interfaces, database, or Spring?
 They are not needed to demonstrate Facade. Ordinary classes and standard Java
@@ -83,5 +83,5 @@ into another interface that the client expects.
 
 Before submitting
 Understand every method and adapt the example yourself. The assignment allows AI
-only for examples and explanations. Upload your version to GitHub, enter its URL
-in the PDF field, and submit the report and repository link to Moodle.
+only for examples and explanations. Review your version on GitHub, check the repository
+link in the report, and submit the report and repository link to Moodle.
