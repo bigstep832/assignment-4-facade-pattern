@@ -1,0 +1,87 @@
+NOTES FOR THE IN-CLASS DEFENSE
+
+Main idea
+Facade is a structural design pattern. It provides a simple interface to several
+subsystem classes. In this project, one call to placeOrder replaces the need
+to manage inventory, payment, shipping, and notification separately.
+
+How to describe the project
+"This example processes an order for a book. Main calls only OrderFacade.
+The facade first reserves books, then charges the customer, creates a shipment,
+and saves a confirmation. If payment fails, it releases the reserved books.
+If the address is empty, it refunds the payment and releases the books."
+
+Each class's responsibility
+Main — runs five examples and displays the results.
+OrderFacade — coordinates the steps and rollback.
+InventoryService — stores the stock count, reserves books, and releases them.
+PaymentProcessor — stores demo balances, charges customers, and refunds payments.
+ShippingService — checks the address, creates a shipment ID, and stores the address.
+NotificationService — creates confirmation text and saves it in a list.
+
+How to run
+Run these commands from the project folder:
+javac --release 17 -encoding UTF-8 -d out src/*.java
+java -cp out Main
+
+What to show in the console
+1. Alice buys 1 book for 1000 KZT: 2 books and 2000 KZT remain.
+2. Bob tries to buy 2 books, but he has only 500 KZT, so payment is declined.
+   The 2 reserved books are returned to stock.
+3. Alice orders 2 books with an empty address. A shipping error occurs after
+   payment. The facade refunds 2000 KZT and returns 2 books to stock.
+4. Alice successfully buys 2 books. This shows that rollback worked.
+5. The next order fails because no books remain.
+
+Possible questions
+
+Why is this the Facade pattern?
+Main calls one clear method, while OrderFacade coordinates four independent
+services. The client does not need to know the order of the service calls.
+
+What does the facade hide?
+Service creation, the order of operations, and resource recovery after errors.
+It does not hide errors completely: Main receives an exception and displays its message.
+
+Can a client use a service directly?
+Yes. The classes and their methods are public, and they do not know about the
+facade. An advanced client can use them directly. The demonstration in Main
+uses the facade.
+
+Why is the paid variable needed?
+It starts as false and becomes true only after charge succeeds.
+If payment is declined, no refund is needed because no money was deducted.
+If shipping fails, paid is already true, so the money must be refunded.
+
+Why is reserve called before try?
+If reserve rejects the quantity or available stock, it has not changed the stock,
+so there is nothing to roll back. After reserve succeeds, the next steps run inside try.
+
+Why does ShippingService check the address?
+This service is responsible for shipping. In this example, checking the address
+after payment demonstrates a refund. A larger application would usually perform
+known input checks early, but it would still need to handle external shipping failures.
+
+Which five Clean Code principles are used?
+Meaningful names; single responsibility; hiding details behind a simple interface;
+short methods with early validation; proper error handling.
+The report includes a code excerpt for each principle.
+
+Why are there no interfaces, database, or Spring?
+They are not needed to demonstrate Facade. Ordinary classes and standard Java
+collections are enough here. This makes the pattern easier to see.
+
+What has been simplified?
+There is one product and two demo accounts. Data is stored in one process's memory.
+There are no real payments, parcel deliveries, or network notifications.
+A notification failure is not modeled: the service only saves a string in a list.
+This is not a complete transaction system or a multithreaded online shop.
+
+How is Facade different from Adapter?
+Facade simplifies access to a subsystem. Adapter changes an existing interface
+into another interface that the client expects.
+
+Before submitting
+Understand every method and adapt the example yourself. The assignment allows AI
+only for examples and explanations. Upload your version to GitHub, enter its URL
+in the PDF field, and submit the report and repository link to Moodle.
