@@ -3,7 +3,6 @@
 A simple Java 17 learning example. `Main` uses only `OrderFacade`,
 which coordinates inventory, payment, shipping, and notification.
 
-Repository: https://github.com/bigstep832/assignment-4-facade-pattern
 
 There is one product: Java Book, priced at 1000 KZT. The initial stock is 3 books.
 Alice's demo balance is 3000 KZT, and Bob's demo balance is 500 KZT.
