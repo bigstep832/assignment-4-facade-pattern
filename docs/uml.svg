@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="490" height="373" preserveAspectRatio="xMinYMin meet" viewBox="0 0 490 373" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="490" height="373"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-373)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="155" y="325" width="180" height="43" style="stroke: rgb(14%,14%,14%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="234.1802978515625" y="352" style="font-family: ArialBold; font-size: 9.5px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,704) scale(1,-1)">Main</text>
+			<path d="M 155,344 L 335,344 Z" style="stroke: rgb(14%,14%,14%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<text x="163" y="331" style="font-family: Mono; font-size: 7.8px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,662) scale(1,-1)">+ main(args: String[]): void</text>
+			<rect x="100" y="176" width="290" height="106" style="stroke: rgb(14%,14%,14%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="215.6951904296875" y="266" style="font-family: ArialBold; font-size: 9.5px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,532) scale(1,-1)">OrderFacade</text>
+			<path d="M 100,258 L 390,258 Z" style="stroke: rgb(14%,14%,14%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<text x="108" y="245" style="font-family: Mono; font-size: 7.8px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,490) scale(1,-1)">- inventory: InventoryService</text>
+			<text x="108" y="235" style="font-family: Mono; font-size: 7.8px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,470) scale(1,-1)">- payment: PaymentProcessor</text>
+			<text x="108" y="225" style="font-family: Mono; font-size: 7.8px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,450) scale(1,-1)">- shipping: ShippingService</text>
+			<text x="108" y="215" style="font-family: Mono; font-size: 7.8px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,430) scale(1,-1)">- notification: NotificationService</text>
+			<path d="M 100,208 L 390,208 Z" style="stroke: rgb(14%,14%,14%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<text x="108" y="195" style="font-family: Mono; font-size: 7.8px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,390) scale(1,-1)">+ placeOrder(quantity: int,</text>
+			<text x="108" y="185" style="font-family: Mono; font-size: 7.8px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,370) scale(1,-1)">    customer: String, address: String): String</text>
+			<path d="M 245,325 L 245,282 Z" style="stroke: rgb(14%,14%,14%); stroke-linecap: butt; stroke-width: 0.9; stroke-dasharray: 4, 3;"/>
+			<polyline points="241 288, 245 282, 249 288" style="stroke: rgb(14%,14%,14%); stroke-linecap: butt; stroke-width: 0.9; fill: None; fill-rule: evenodd;"/>
+			<text x="253" y="302" style="font-family: Arial; font-size: 8px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,604) scale(1,-1)">uses</text>
+			<rect x="15" y="78" width="220" height="62" style="stroke: rgb(14%,14%,14%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="86.717041015625" y="124" style="font-family: ArialBold; font-size: 9.5px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,248) scale(1,-1)">InventoryService</text>
+			<path d="M 15,116 L 235,116 Z" style="stroke: rgb(14%,14%,14%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<text x="23" y="103" style="font-family: Mono; font-size: 7.8px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,206) scale(1,-1)">+ reserve(quantity: int): int</text>
+			<text x="23" y="93" style="font-family: Mono; font-size: 7.8px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,186) scale(1,-1)">+ release(quantity: int): void</text>
+			<text x="23" y="83" style="font-family: Mono; font-size: 7.8px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,166) scale(1,-1)">+ getStock(): int</text>
+			<rect x="255" y="78" width="220" height="62" style="stroke: rgb(14%,14%,14%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="321.9647216796875" y="124" style="font-family: ArialBold; font-size: 9.5px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,248) scale(1,-1)">PaymentProcessor</text>
+			<path d="M 255,116 L 475,116 Z" style="stroke: rgb(14%,14%,14%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<text x="263" y="103" style="font-family: Mono; font-size: 7.8px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,206) scale(1,-1)">+ charge(customer: String, amount: int): void</text>
+			<text x="263" y="93" style="font-family: Mono; font-size: 7.8px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,186) scale(1,-1)">+ refund(customer: String, amount: int): void</text>
+			<text x="263" y="83" style="font-family: Mono; font-size: 7.8px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,166) scale(1,-1)">+ getBalance(customer: String): int</text>
+			<rect x="15" y="0" width="220" height="52" style="stroke: rgb(14%,14%,14%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="87.7816162109375" y="36" style="font-family: ArialBold; font-size: 9.5px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,72) scale(1,-1)">ShippingService</text>
+			<path d="M 15,28 L 235,28 Z" style="stroke: rgb(14%,14%,14%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<text x="23" y="15" style="font-family: Mono; font-size: 7.8px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,30) scale(1,-1)">+ createShipment(address: String): String</text>
+			<text x="23" y="5" style="font-family: Mono; font-size: 7.8px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,10) scale(1,-1)">+ getAddress(shipmentId: String): String</text>
+			<rect x="255" y="0" width="220" height="52" style="stroke: rgb(14%,14%,14%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="321.9739990234375" y="36" style="font-family: ArialBold; font-size: 9.5px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,72) scale(1,-1)">NotificationService</text>
+			<path d="M 255,28 L 475,28 Z" style="stroke: rgb(14%,14%,14%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<text x="263" y="15" style="font-family: Mono; font-size: 7.8px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,30) scale(1,-1)">+ confirm(customer: String,</text>
+			<text x="263" y="5" style="font-family: Mono; font-size: 7.8px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,10) scale(1,-1)">    shipmentId: String, total: int): String</text>
+			<polygon points="125 176, 128 171, 125 166, 122 171" style="stroke: rgb(14%,14%,14%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,14%,14%); fill-rule: evenodd;"/>
+			<path d="M 125,166 L 125,140 Z" style="stroke: rgb(14%,14%,14%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<text x="133" y="151" style="font-family: Arial; font-size: 8px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,302) scale(1,-1)">owns inventory</text>
+			<polygon points="365 176, 368 171, 365 166, 362 171" style="stroke: rgb(14%,14%,14%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,14%,14%); fill-rule: evenodd;"/>
+			<path d="M 365,166 L 365,140 Z" style="stroke: rgb(14%,14%,14%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<text x="373" y="151" style="font-family: Arial; font-size: 8px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,302) scale(1,-1)">owns payment</text>
+			<polygon points="105 176, 108 171, 105 166, 102 171" style="stroke: rgb(14%,14%,14%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,14%,14%); fill-rule: evenodd;"/>
+			<polyline points="105 166, 5 166, 5 26, 15 26" style="stroke: rgb(14%,14%,14%); stroke-linecap: butt; stroke-width: 0.8; fill: None; fill-rule: evenodd;"/>
+			<text x="13" y="173" style="font-family: Arial; font-size: 8px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,346) scale(1,-1)">owns shipping</text>
+			<polygon points="385 176, 388 171, 385 166, 382 171" style="stroke: rgb(14%,14%,14%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,14%,14%); fill-rule: evenodd;"/>
+			<polyline points="385 166, 485 166, 485 26, 475 26" style="stroke: rgb(14%,14%,14%); stroke-linecap: butt; stroke-width: 0.8; fill: None; fill-rule: evenodd;"/>
+			<text x="397" y="173" style="font-family: Arial; font-size: 8px;fill: rgb(14%,14%,14%); stroke:none;" transform="translate(0,346) scale(1,-1)">owns notifications</text>
+		</g>
+	</g>
+</svg>
